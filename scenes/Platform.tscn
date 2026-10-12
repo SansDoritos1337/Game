@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[node name="Platform" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform"]
+mesh = BoxMesh { size = Vector3(4.0, 0.5, 6.0) }
+material/0 = StandardMaterial3D { albedo_color = Color(0.7, 0.7, 0.7, 1) }
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Platform"]
+shape = BoxShape3D { size = Vector3(4.0, 0.5, 6.0) }

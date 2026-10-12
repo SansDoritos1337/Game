@@ -1,0 +1,5 @@
+config_version=4
+
+[application]
+name="Building Runner Prototype"
+run/main_scene="res://scenes/Main.tscn"
